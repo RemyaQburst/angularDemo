@@ -1,0 +1,33 @@
+ <form ng-hide="showform" class="addform" name="addeditForm" novalidate ng-submit="formsubmit()">
+        <div class="inputWrap">
+          <h2></h2>
+          <div class="formInput table fullWidth">
+              <label class="tableCell">ID:</label>
+              <input type="text" ng-model="emparr.id" name="id" ng-minlength=1 class="tableCell" required>
+          </div>
+         <!--  <span style="color:red" ng-show="addeditForm.id.$dirty && addeditForm.id.$invalid"> -->
+              <span ng-show="addeditForm.id.$invalid && submitted" class="error">Please enter id.
+              </span>
+              <span ng-show="addeditForm.id.$dirty && idnotnoerror" class="error ">Please enter a valid id.
+              </span>
+          <!-- </span> -->
+          <div class="formInput table fullWidth"> 
+             <label class="tableCell">NAME:</label>
+             <input type="text" ng-model="emparr.name" class="tableCell" name="name" required>
+          </div>
+          <span ng-show="addeditForm.name.$invalid && submitted" class="error">Please enter name.
+              </span>
+          <div class="formInput table fullWidth"> 
+             <label class="tableCell">DESG:</label>
+             <input type="text" ng-model="emparr.desg" name="desg" class="tableCell" required>
+          </div> 
+          <span ng-show="addeditForm.desg.$invalid && submitted" class="error ">Please enter designation.
+              </span>
+           <div class="clear"></div>   
+           <div class="center">
+              <button type="submit" ng-click="Save(addeditForm.$valid)" ng-show="adduser" >Save</button>
+              <button ng-click="Update(addeditForm.$valid)" ng-show="edituser">Update</button>
+           </div>
+           
+         </div>     
+      </form>

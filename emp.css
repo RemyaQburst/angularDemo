@@ -1,0 +1,120 @@
+body {
+	overflow: hidden;
+}
+*{
+	margin: 0;
+	padding:0; 
+}
+.clear {
+	clear: both;
+}
+.addform {
+	width: 100%;
+  margin-top: 50px;
+  border: 1px solid #000;
+  padding: 20px 0;
+}
+.fullWidth {
+	width: 100%;
+}
+table td{
+	padding:5px 0px;
+}
+table,th,td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+.center {
+	text-align: center;
+}
+.formInput {
+	margin-bottom: 10px;
+}
+.table {
+	display: table;
+}
+.tableCell {
+	display: table-cell;
+}
+.addform label {
+	width: 20%;
+}
+.addform input {
+	width:80%;
+	outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 1px solid #000;
+}
+.addform h2 {
+	width: 33%;
+  margin: 0 auto 20px;
+}
+.header {
+	background: #000;
+	width: 100%;
+	padding: 10px 20px;
+}
+.header ul{
+	float: left;
+}
+.header  li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px;
+}
+.header  li :hover {
+   color: #ccc;
+}
+.header  li a{
+	text-decoration: none;
+	 color: #fff;
+}
+.empform {
+	width:50%;
+	margin: 20px auto;
+}
+.inputWrap {
+	width: 50%;
+  margin: 0 auto;
+}
+button {
+	padding: 5px;
+	text-align: center;
+	color:#fff;
+	background: #000; 
+	cursor: pointer;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 5px 10px;
+}
+.adduserbtn {
+margin-top: 20px;
+}
+.homeContent {
+	padding: 20px 30px;
+}
+button:disabled {
+	background-color: blue;
+}
+.error {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  float: left;
+  width:100%;
+}
+/*input.ng-invalid.ng-dirty {
+	border-color: #e74c3c;
+}
+input.ng-valid.ng-dirty {
+	border-color: #2ecc71;
+}
+input.ng-untouched {
+	border-color:#000 !important;
+}*/

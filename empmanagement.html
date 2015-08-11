@@ -1,0 +1,29 @@
+ <div ng-controller="EmpListCtrl" class="empform">
+ <h2>Employees</h2>
+ <table class="fullWidth"> <!--This table is to display the data-->
+        <thead>
+              <tr>
+                  <td  class="center">ID</td>
+                  <td  class="center">Name</td>
+                  <td  class="center">Designation</td>
+                  <td class="center">Actions</td>
+              </tr>
+       </thead>
+        <tbody ng-repeat="emp in emparr">
+            <tr>
+                
+                <td class="center">{{emp.id}}</td>
+                <td class="center">{{emp.name}}</td>
+                <td class="center">{{emp.desg}}</td>
+                <td class="center">
+                  <button ng-click="Edit(emp,emparr.indexOf(emp))">Edit</button>
+                  <button ng-click="Delete(emparr.indexOf(emp))">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+    <button ng-click="toggle();" class="adduserbtn">ADD USER</button>  
+    <div ui-view="addeditformView">
+      
+    </div>
+</div>
